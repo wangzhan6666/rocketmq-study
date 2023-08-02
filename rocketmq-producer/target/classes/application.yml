@@ -1,0 +1,14 @@
+server:
+  port: 8085
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: rocketmq-producer
+rocketmq:
+  name-server: 127.0.0.1:9876
+  producer:
+    group: study_annotion_producer_group
+    send-message-timeout: 3000  # 消息发送的超时时间
+    retry-times-when-send-async-failed: 2  # 异步消息发送失败重试次数
+    max-message-size: 4194304 # 消息的最大长度

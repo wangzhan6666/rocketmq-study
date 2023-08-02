@@ -1,0 +1,9 @@
+server:
+  port: 8084
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: rocketmq-consumer
+rocketmq:
+  name-server: 127.0.0.1:9876
